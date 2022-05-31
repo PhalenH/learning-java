@@ -1,20 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(15, 8, 15, 8, 17);
-        Triangle triangleB = new Triangle(3, 2.598, 3, 3,3);
 
-        double triangleAArea = triangleA.findArea();
-        System.out.println(triangleAArea);
+        Student bob = new Student("Bob", "BobBob", 2022, 3.8, "Coding");
+        Student Jon = new Student("Jon", "Chief", 2023, 4.0, "Deals");
 
-        double triangleBArea = triangleB.findArea();
-        System.out.println(triangleBArea);
+        System.out.println(Jon);
+        System.out.println(bob.gpa);
 
-        System.out.println(triangleA.sideLenThree);
-        System.out.println(triangleB.base);
-
-        System.out.println(Triangle.numOfSides);
-        // Triangle.findArea()? --> Math.pow(2,3)?
+        Jon.fifthYear();
+        System.out.println(Jon.graduation);
 
 
     }
